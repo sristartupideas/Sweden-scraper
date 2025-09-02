@@ -1,0 +1,11 @@
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+scrapy==2.11.0
+python-multipart==0.0.6
+pydantic==2.4.2
+aiofiles==23.2.1
+requests==2.31.0
+lxml==4.9.3
+twisted==22.10.0
+cryptography==41.0.7
+pathlib2==2.3.7
