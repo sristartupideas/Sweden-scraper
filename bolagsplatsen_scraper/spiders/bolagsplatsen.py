@@ -160,10 +160,7 @@ class BolagsplatsenSpider(scrapy.Spider):
             # Add timestamp
             item['scraped_at'] = datetime.now().isoformat()
             
-            # Always yield the item first, then follow for more details if URL exists
-            yield item
-            
-            # If we have a listing URL, follow it to get more details
+            # Follow to detail page to get full descriptions and additional content
             if item.get('url'):
                 yield scrapy.Request(
                     item['url'],
